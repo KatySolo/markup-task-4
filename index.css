@@ -1,0 +1,97 @@
+body
+{
+    cursor: url('cats/black-paw.svg'), auto;
+}
+
+.cat-name-link:hover,
+input:hover,
+label:hover
+{
+    cursor: url('cats/white-paw.svg'), auto;
+}
+
+input[value='list']:checked ~ .card
+{
+    display: block;
+    padding: 10px;
+    width: 500px;
+    height: 450px;
+}
+
+input[value='list']:checked ~ .card .cat-image
+{
+    height: 65%;
+    overflow: hidden;
+}
+
+input[value='list']:checked ~ .card .short-info
+{
+    display: none;
+}
+
+input[value='list']:checked ~ .card .long-info
+{
+    display: block;
+}
+
+.card
+{
+    background: rgb(243, 222, 226);
+    border: 1px solid #808080;
+    height: 350px;
+    width: 250px;
+    display: inline-block;
+    margin: 7px;
+}
+
+.card:hover
+{
+    box-shadow: 0 0 10px #000;
+    transform: scale(1.03);
+}
+
+.name
+{
+    font-size: 25px;
+    margin: 10px;
+    width: 100%;
+}
+
+.cat-image
+{
+    width: 100%;
+    height: 45%;
+}
+
+.cat-image:hover
+{
+    cursor: url('cats/white-paw.svg'), auto;
+}
+
+.cat-name-link
+{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+}
+
+.cat-name-link:hover
+{
+    text-decoration: underline #000;
+}
+
+.short-info
+{
+    margin: 10px;
+}
+
+.long-info
+{
+    display: none;
+    margin: 10px;
+    color: #808080;
+}
