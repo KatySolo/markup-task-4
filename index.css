@@ -21,7 +21,7 @@ input[type='checkbox']
     display: none;
 }
 
-input[type='checkbox']:checked + .toggleContainer > .navicon
+input[type='checkbox']:checked + .toggle-container > .navicon
 {
     transform: rotate(90deg);
 }
@@ -54,7 +54,7 @@ input[type='checkbox']:checked ~ .card .long-info
 {
     border-radius: 15px;
     overflow: hidden;
-    background: rgb(243, 222, 226);
+    background: #f3dee2;
     border: 1px solid #808080;
     height: 350px;
     width: 250px;
@@ -77,8 +77,10 @@ input[type='checkbox']:checked ~ .card .long-info
 
 .cat-image
 {
-    width: 100%;
+    border-radius: 15px;
+    width: 94%;
     height: 45%;
+    margin: 7px;
 }
 
 .cat-image:hover
